@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #ff4848;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+  margin: 0px;
+  list-style: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+}
+.topnav ul li {
+  list-style: none inside;
+}
+/* Định dạng link điều hướng */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ff0000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Thay đổi màu liên kết khi di chuột qua */
+.topnav a:hover {
+  background-color: #ffffff;
+  color: rgb(255, 0, 0);
+}
+
+.container {
+  width: 96%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .list-course {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  background-color: snow;
+}
+
+.container .list-course .PR {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container .list-course .PR p {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px 50px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.footer .noi-dung {
+  margin-right: 30px;
+}
+.footer .noi-dung.about {
+  width: 30%;
+}
+.footer .noi-dung.about p {
+  color: rgb(0, 0, 0);
+}
+.footer .noi-dung.about h2 {
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.footer .noi-dung.about h2:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+}
+.links h2 {
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.links h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+}
+.links {
+  position: relative;
+  width: 30%;
+}
+.links div p {
+  list-style: none;
+}
+.links div p a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.links div p a:hover {
+  color: rgb(255, 0, 0);
+}
+.contact h2 {
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.contact h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+}
+.contact {
+  width: calc(35% - 60px);
+  margin-right: 0 !important;
+}
+.contact .info {
+  position: relative;
+}
+.contact .info li {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.contact .info li span {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.contact .info li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}

@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  position: relative;
+  display: flex;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+  margin: 0px;
+  list-style: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+}
+.topnav ul li {
+  list-style: none inside;
+}
+/* Định dạng link điều hướng */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ff0000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Thay đổi màu liên kết khi di chuột qua */
+.topnav a:hover {
+  background-color: #ffffff;
+  color: rgb(255, 0, 0);
+}
+
+.img-bg {
+  position: relative;
+  width: 35%;
+  height: 100%;
+}
+
+.img-bg img {
+  position: absolute;
+  top: 18;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.noi-dung {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+.noi-dung form {
+  width: 100%;
+}
+.noi-dung .form h2 {
+  color: #000000;
+  font-weight: 500;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #f70000;
+  display: inline-block;
+  letter-spacing: 5px;
+}
+.noi-dung form .input-form {
+  margin-bottom: 20px;
+}
+.noi-dung form .input-form span {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #607db8;
+  letter-spacing: 1px;
+}
+.noi-dung form .input-form input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid #607d8b;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #607d8b;
+  background: transparent;
+  border-radius: 30px;
+}
+.noi-dung form .input-form input[type="submit"] {
+  background: #ff0000;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+.noi-dung form .input-form input[type="submit"]:hover {
+  background: #ff0000;
+}
+.noi-dung form .nho-dang-nhap {
+  margin-bottom: 10px;
+  color: #607d8b;
+  font-size: 14px;
+}
+.noi-dung form .input-form p {
+  color: #607d8b;
+}
+.noi-dung form .input-form p a {
+  color: #ff0000;
+}
+.noi-dung h3 {
+  color: #607d8b;
+  text-align: center;
+  margin: 80px 0 10px;
+  font-weight: 500;
+}
+.noi-dung .icon-dang-nhap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.noi-dung .icon-dang-nhap li {
+  list-style: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.noi-dung .icon-dang-nhap li:nth-child(1) {
+  color: #3b5999;
+}
+.noi-dung .icon-dang-nhap li:nth-child(2) {
+  color: #ff0000;
+}
+.noi-dung .icon-dang-nhap li:nth-child(3) {
+  color: #55acee;
+}
+.noi-dung .icon-dang-nhap li i {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .noi-dung {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .noi-dung .form {
+    width: 100%;
+    padding: 40px;
+    background: rgba(255 255 255 / 0.9);
+    margin: 50px;
+  }
+  .noi-dung .form h3 {
+    color: #607d8b;
+    text-align: center;
+    margin: 30px 0 10px;
+    font-weight: 500;
+  }
+}
